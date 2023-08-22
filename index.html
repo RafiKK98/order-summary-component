@@ -3,35 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
+<body class="bg-blue-200 font-red-hat-display">
+  <main class="flex flex-col items-center justify-center p-0 rounded-2xl bg-white w-1/4 mx-auto text-center">
+    <div class="rounded-2xl w-full">
+      <img src="./images/illustration-hero.svg" class="rounded-t-2xl w-full" alt="">
+    </div>
+    <div>
+      <h3>Order Summary</h3>
+      <p>
+        You can now listen to millions of songs, audiobooks, and
+        podcasts on any device anywhere you like!
+      </p>
+    </div>
+    <div class="flex justify-between items-center gap-10 bg-slate-100 p-5 rounded-2xl">
+      <img src="./images/icon-music.svg" alt="">
+      <div class="mr-5">
+        <p>Annual Plan</p>
+        <p>$59.99/year</p>
+      </div>
+      <a href="#">Change</a>
+    </div>
+    <button class="btn bg-[#3829e0] text-white w-[80%] rounded-xl py-3">Proceed to Payment</button>
+    <button class="btn w-[80%] rounded-xl py-3">Cancel Order</button>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Rafi Khan Khadem</a>.
   </div>
 </body>
 </html>
