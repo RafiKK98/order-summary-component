@@ -34,7 +34,16 @@ body {
 .dark-blue {
     color: hsl(223, 47%, 23%);
 }
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
 
+@media (max-width: 465px) {
+    main {
+        width: 80%;
+    }
+}
 @media (max-width: 1440px) {
     body {
         background-image: url('../images/pattern-background-mobile.svg');
